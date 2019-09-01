@@ -1,0 +1,224 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+a:hover{
+    text-decoration: none !important;
+}
+a:hover {
+    color: #13BFCB;
+}
+ul {
+    list-style: square;
+}
+/*########################################################*/
+/*########################################################
+    TABLE OF CONTENTS  
+-----------------------------------------------------------
+
+        TOP-NAV
+        MAIN-NAV
+                            /**## DROPDOWNS ##*/
+                            /**## NAV-BOTTOM ##*
+        HERO
+        MAIN CONTENT
+                            /**## FONTS ##**/
+                            /**## MAIN ##**
+        FOOTER
+
+-----------------------------------------------------------
+##########################################################*/
+/*########################################################
+
+    TTA
+
+    line.4) Links. Are all underlined on hover. Annoying and weird. Would look up solution but wifi hasn't worked on my computer for like two weeks.
+    line. 153) hero img/jumbotron. How do I make that responsive?
+    line.ALL) Wrote bad HTML I guess. CSS isn't efficient. Will fix on total redesign.
+    line.ALL) //text-transform: ____// NEVER works. It used to, but it doesn't anymore. 😭
+    line.ALL) I don't understand pic resizing at all. I guess I didn't try to learn but whatever.
+    line.FOOTER) Bad HTML literally sets me up for failure in footer. If I try to add more pictures, the whole Facebook column div can't identify the end of its own div.
+    ~~~~ "Welcome to Venedor" break subtext; I can't get it to not be the way it is. Which is... I don't know. I forgot to finish the sentence.
+    line.57) ::top-nav:: bar doesn't stretch across the whole page. 100% sure it's because of the inline-block element.
+    line.117 -- line.HTML.31) Main nav logo picture doesn't even seem like it's in a container. Hovers to the left.
+    line. 175-183 -- line.HTML ref="hsr-item-link") add to cart buttons non-centered.
+    line.124) Search bar won't align right.
+
+-- -- -- -- -- -- -- --
+
+    FIXED
+
+    (SOLVED) That <hr> in the footer is probably just a groove border and not a horizontal line. 
+    (SOLVED) I'm pretty sure the search bar is just a <form> with a picture on the side but I forgot to add it so I wouldn't know.
+    (SOLVED) Manufacturer logos are unclickable/uncentered.
+
+/*************************************************************/
+
+/*####################### TOP-NAV ######################*/
+.usernav-top {
+    background-color: #F5F5F5;
+    padding-top: 5px; padding-bottom: 5px;
+}
+.usernav-top li {
+    display: inline;
+    list-style: none;
+    padding: 10px;
+}
+.usernav-top a {
+    color: #13BFCB;
+}
+.usernav-login-text {
+    text-align: right;
+}
+/*####################### MAIN NAV ######################*/
+.navigation-links-top {
+    text-align: right;
+    margin-top: 30px;
+}
+                                /* DROPDOWNS*/
+.dropbtn {
+    background-color: #E8E8E8;
+    color: #878787;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    text-align: left;
+    font-size: 12px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: gray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {display: block; text-decoration: none;} 
+.dropdown-content a:hover {background-color: silver;}
+.dropdown:hover .dropbtn {background-color: rgb(216, 212, 212);}
+
+.dropbtn-cart {
+    background-color: #13BFCB;
+    color: snow;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+}
+                                /*NAV-BOTTOM*/
+.navigation-main-bottom {
+    padding-bottom: 20px;
+}
+.navigation-main-content-links a {
+    color: #5F6156;
+    padding: 10px;
+}
+.navigation-main-searchbar {
+    text-align: right;
+}
+  form.searchbar-home input[type=text] {
+    padding: 4px;
+    border: 1px solid grey;
+    float: left;
+    background: #f1f1f1;
+  }
+  form.searchbar-home button {
+    float: left;
+    padding: 4px;
+    background: #878787;
+    color: white;
+    border: 1px solid grey;
+    border-left: none;
+  }
+  
+  form.searchbar-home button:hover {
+    background: #13BFCB;
+  }
+  
+  /* Clear floats */
+  form.searchbar-home::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/*########################### HERO ##########################*/
+.hero-img {
+    margin-left: auto; margin-right: auto;
+    max-width: 1280px;
+}
+/*########################### MAIN CONTENT ##########################*/
+                                /*FONTS*/
+.homepage-content-header {
+    font-size: 24px;
+    text-transform: capitalize;
+    padding-top: 25px;
+    margin-bottom: 0px;
+}
+                                /*MAIN*/
+.homepage-slide {
+    padding-bottom: 20px;
+}
+.homepage-content-header-subtext {
+    margin-top: 0px;
+}
+.homepage-manufacturers-break {
+    padding-bottom: 68px;
+}
+.hsr-item-link a{
+    padding-left: 15px; padding-right: 15px;
+    padding-top: 10px; padding-bottom: 10px;
+    margin-left: auto; margin-right: auto;
+    background-color: #434B4D;
+    color: snow;
+    border-radius: 5px;
+    text-align: center;
+    font-size: .9em;
+}
+.hsr-item-link a:active a:hover {
+    color: snow;
+}
+.home-content-break-left p{
+    margin-right: 34px;
+}
+/*######################### FOOTER #########################*/
+footer {
+    background-color: #434B4D;
+    color: #ABACAE;
+}
+footer hr {
+    border-style: groove;
+    border-color: slategray;
+}
+.footer-column-header {
+    padding-top: 50px;
+    font-size: 20px;
+}
+.footer-columns ul {
+    padding: 15px;
+}
+.footer-columns li {
+    margin-bottom: 10px;
+}
+.footer-columns a {
+    color: #ABACAE;
+}
+.footer-tweet a {
+    color: #13BFCB;
+    text-decoration: underline;
+}
+.tweet-date {
+    font-size: .8em;
+    color: silver;
+    padding-bottom:25px; 
+}
+.footer-column-subtextone a {
+    color: #13BFCB;
+}
