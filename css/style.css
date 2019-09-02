@@ -1,11 +1,11 @@
+:root {
+    --sky-blue: #13BFCB;
+}
 body {
     font-family: 'Oswald', sans-serif;
 }
 a:hover{
     text-decoration: none !important;
-}
-a:hover {
-    color: #13BFCB;
 }
 ul {
     list-style: square;
@@ -31,7 +31,6 @@ ul {
 
     TTA
 
-    line.4) Links. Are all underlined on hover. Annoying and weird. Would look up solution but wifi hasn't worked on my computer for like two weeks.
     line. 153) hero img/jumbotron. How do I make that responsive?
     line.ALL) Wrote bad HTML I guess. CSS isn't efficient. Will fix on total redesign.
     line.ALL) //text-transform: ____// NEVER works. It used to, but it doesn't anymore. 😭
@@ -50,21 +49,23 @@ ul {
     (SOLVED) That <hr> in the footer is probably just a groove border and not a horizontal line. 
     (SOLVED) I'm pretty sure the search bar is just a <form> with a picture on the side but I forgot to add it so I wouldn't know.
     (SOLVED) Manufacturer logos are unclickable/uncentered.
+    (SOLVED) Links. Are all underlined on hover. Annoying and weird. Would look up solution but wifi hasn't worked on my computer for like two weeks.
 
 /*************************************************************/
 
 /*####################### TOP-NAV ######################*/
 .usernav-top {
     background-color: #F5F5F5;
-    padding-top: 5px; padding-bottom: 5px;
+    padding-top: 8px;
 }
 .usernav-top li {
     display: inline;
     list-style: none;
     padding: 10px;
+    color: var(--sky-blue) 
 }
 .usernav-top a {
-    color: #13BFCB;
+    color: var(--sky-blue); 
 }
 .usernav-login-text {
     text-align: right;
@@ -211,7 +212,7 @@ footer hr {
     color: #ABACAE;
 }
 .footer-tweet a {
-    color: #13BFCB;
+    color: var(--sky-blue); 
     text-decoration: underline;
 }
 .tweet-date {
@@ -220,5 +221,5 @@ footer hr {
     padding-bottom:25px; 
 }
 .footer-column-subtextone a {
-    color: #13BFCB;
+    color: var(--sky-blue); 
 }
